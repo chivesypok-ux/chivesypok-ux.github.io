@@ -143,14 +143,14 @@ button{font:inherit;color:inherit}
 .pair .card{position:absolute;left:0;top:calc(var(--tcw)*.06)}
 .pair .def{left:calc(var(--tcw)*.3);top:calc(var(--tcw)*.3);transform:rotate(9deg);animation:dkpop .25s}
 .pair.sel .card:first-child{outline:3px solid var(--acc)}
-.card{width:var(--cw);height:calc(var(--cw)*1.4);background:#fbfaf6;color:#0b0b0b;border-radius:9px;box-shadow:0 2px 6px #0007,0 0 0 1px #0002 inset;position:relative;font-weight:700;animation:dkpop .22s;transition:transform .12s;flex:0 0 auto}
-.card.red{color:#c62828}
+.card{width:var(--cw);height:calc(var(--cw)*1.4);background:#fff;color:#000;border-radius:6px;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;box-shadow:1px 2px 4px #0008;position:relative;font-weight:700;animation:dkpop .22s;transition:transform .12s;flex:0 0 auto}
+.card.red{color:#e00000}
 .card b{position:absolute;left:5px;top:3px;font-size:calc(var(--cw)*.26);line-height:1;text-align:center}
 .card b i{display:block;font-style:normal;font-size:calc(var(--cw)*.24)}
 .card b.br{left:auto;right:5px;top:auto;bottom:3px;transform:rotate(180deg)}
 .card span.face{position:absolute;left:23%;right:23%;top:9%;bottom:9%;display:block}
 .card span.face svg{width:100%;height:100%;display:block}
-.card.back{background:var(--backimg,repeating-linear-gradient(45deg,#2b4f9b 0 6px,#35609f 6px 12px));border:3px solid #fbfaf6}
+.card.back{background:var(--backimg,url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20140%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%22%20height%3D%22140%22%20fill%3D%22%231f7fd8%22/%3E%3Crect%20x%3D%226%22%20y%3D%226%22%20width%3D%2288%22%20height%3D%22128%22%20fill%3D%22none%22%20stroke%3D%22%238cc4f4%22%20stroke-width%3D%221.5%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%2280%22%20height%3D%22120%22%20fill%3D%22%231a74cc%22/%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2270%22%20r%3D%2226%22%20fill%3D%22%230e2a5c%22/%3E%3Cg%20stroke%3D%22%235f93c9%22%20stroke-width%3D%221.6%22%20opacity%3D%22.8%22%3E%3Cpath%20d%3D%22M24%2040%20L24%20100%22/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath%20id%3D%22c%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2270%22%20r%3D%2226%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%20stroke%3D%22%236aa0d6%22%20stroke-width%3D%221.4%22%20opacity%3D%22.75%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M-10%2040%20L30%20100%20M110%2040%20L70%20100%22/%3E%3Cpath%20d%3D%22M0%2040%20L40%20100%20M100%2040%20L60%20100%22/%3E%3Cpath%20d%3D%22M10%2040%20L50%20100%20M90%2040%20L50%20100%22/%3E%3Cpath%20d%3D%22M20%2040%20L60%20100%20M80%2040%20L40%20100%22/%3E%3Cpath%20d%3D%22M30%2040%20L70%20100%20M70%2040%20L30%20100%22/%3E%3Cpath%20d%3D%22M40%2040%20L80%20100%20M60%2040%20L20%20100%22/%3E%3Cpath%20d%3D%22M50%2040%20L90%20100%20M50%2040%20L10%20100%22/%3E%3Cpath%20d%3D%22M60%2040%20L100%20100%20M40%2040%20L0%20100%22/%3E%3Cpath%20d%3D%22M70%2040%20L110%20100%20M30%2040%20L-10%20100%22/%3E%3C/g%3E%3Cg%20fill%3D%22%230a1d42%22%3E%3Cpath%20d%3D%22M30%2060%20Q36%2048%2050%2052%20Q44%2062%2034%2070Z%22/%3E%3Cpath%20d%3D%22M64%2056%20Q72%2062%2070%2074%20Q60%2070%2058%2060Z%22/%3E%3Cpath%20d%3D%22M42%2082%20Q52%2076%2062%2084%20Q58%2092%2046%2090Z%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2270%22%20r%3D%2226%22%20fill%3D%22none%22%20stroke%3D%22%237fb0e0%22%20stroke-width%3D%221.2%22%20opacity%3D%22.7%22/%3E%3C/svg%3E") center/100% 100%);border:3px solid #fbfaf6}
 .card.ok{transform:translateY(-10px);box-shadow:0 4px 10px #0009,0 0 0 2px var(--acc)}
 .card.no{filter:brightness(.72)}
 .card.dealin{animation:dkdeal .5s cubic-bezier(.2,.8,.3,1) both;animation-delay:var(--dl,0s)}
@@ -193,13 +193,16 @@ button{font:inherit;color:inherit}
 .sbar2 .bt{min-height:44px;min-width:44px;padding:0 10px;font-size:14px}
 .sol-b{position:absolute;inset:0;scrollbar-width:none}.sol-b::-webkit-scrollbar{display:none}
 .slot{position:absolute;border:2px dashed #ffffff4d;border-radius:8px;color:#ffffff80;display:flex;align-items:center;justify-content:center}
-.sc{position:absolute;border-radius:8px;background:#fff;color:#111;box-shadow:0 1px 3px #0009;overflow:hidden;font-weight:700;touch-action:none}
-.sc.r{color:#d11}
+.sc{position:absolute;border-radius:6px;background:#fff;color:#111;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;box-shadow:1px 1px 3px #0009;overflow:hidden;font-weight:700;touch-action:none}
+.sc.r{color:#d4262c}
+.sc .ix{position:absolute;left:3px;top:2px;display:flex;flex-direction:column;align-items:center;line-height:.95}.sc .ix b{font-weight:400;font-size:1em}.sc .ix i{font-style:normal;font-size:.62em;margin-top:1px}.sc .ix.r2{left:auto;top:auto;right:3px;bottom:2px;transform:rotate(180deg)}
+.sc .pf{position:absolute;inset:0;display:block}.sc .pf svg{width:100%;height:100%;display:block}
+.sc .pp.cf{left:20%;right:12%;top:9%;bottom:9%}.sc:has(.pp) .ix{font-weight:400}
 .sc .t{position:absolute;left:3px;top:1px;line-height:1;white-space:nowrap}
 .sc .t2{position:absolute;right:3px;bottom:1px;line-height:1;transform:rotate(180deg);white-space:nowrap}
 .sc .pp{position:absolute;left:10%;right:10%;top:25%;bottom:21%;display:block}.sc .pp svg{width:100%;height:100%;display:block}
 .sc .c{position:absolute;left:0;right:0;bottom:2px;text-align:center;line-height:1;opacity:.9}
-.sc.back{background:repeating-linear-gradient(45deg,#2540b8,#2540b8 5px,#4a64d8 5px,#4a64d8 10px);border:2px solid #fff}
+.sc.back{background:url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20140%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22100%22%20height%3D%22140%22%20fill%3D%22%231f7fd8%22/%3E%3Crect%20x%3D%226%22%20y%3D%226%22%20width%3D%2288%22%20height%3D%22128%22%20fill%3D%22none%22%20stroke%3D%22%238cc4f4%22%20stroke-width%3D%221.5%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%2280%22%20height%3D%22120%22%20fill%3D%22%231a74cc%22/%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2270%22%20r%3D%2226%22%20fill%3D%22%230e2a5c%22/%3E%3Cg%20stroke%3D%22%235f93c9%22%20stroke-width%3D%221.6%22%20opacity%3D%22.8%22%3E%3Cpath%20d%3D%22M24%2040%20L24%20100%22/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath%20id%3D%22c%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2270%22%20r%3D%2226%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%20stroke%3D%22%236aa0d6%22%20stroke-width%3D%221.4%22%20opacity%3D%22.75%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M-10%2040%20L30%20100%20M110%2040%20L70%20100%22/%3E%3Cpath%20d%3D%22M0%2040%20L40%20100%20M100%2040%20L60%20100%22/%3E%3Cpath%20d%3D%22M10%2040%20L50%20100%20M90%2040%20L50%20100%22/%3E%3Cpath%20d%3D%22M20%2040%20L60%20100%20M80%2040%20L40%20100%22/%3E%3Cpath%20d%3D%22M30%2040%20L70%20100%20M70%2040%20L30%20100%22/%3E%3Cpath%20d%3D%22M40%2040%20L80%20100%20M60%2040%20L20%20100%22/%3E%3Cpath%20d%3D%22M50%2040%20L90%20100%20M50%2040%20L10%20100%22/%3E%3Cpath%20d%3D%22M60%2040%20L100%20100%20M40%2040%20L0%20100%22/%3E%3Cpath%20d%3D%22M70%2040%20L110%20100%20M30%2040%20L-10%20100%22/%3E%3C/g%3E%3Cg%20fill%3D%22%230a1d42%22%3E%3Cpath%20d%3D%22M30%2060%20Q36%2048%2050%2052%20Q44%2062%2034%2070Z%22/%3E%3Cpath%20d%3D%22M64%2056%20Q72%2062%2070%2074%20Q60%2070%2058%2060Z%22/%3E%3Cpath%20d%3D%22M42%2082%20Q52%2076%2062%2084%20Q58%2092%2046%2090Z%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2270%22%20r%3D%2226%22%20fill%3D%22none%22%20stroke%3D%22%237fb0e0%22%20stroke-width%3D%221.2%22%20opacity%3D%22.7%22/%3E%3C/svg%3E") center/100% 100%;border:2px solid #fff}
 .sc.hint{outline:3px solid var(--acc);box-shadow:0 0 14px 2px #ffcf3e;animation:hl .5s infinite alternate;z-index:900!important}
 .slot.hint{border-color:var(--acc);box-shadow:0 0 14px 2px #ffcf3e;animation:hl .5s infinite alternate}
 .sc.solin{animation:solin .45s cubic-bezier(.2,.8,.3,1) both;animation-delay:var(--dl,0s)}
@@ -803,6 +806,7 @@ const Durak = (() => {
 
   // ---------- рубашки и лица карт ----------
   const BACKS = [
+    { name: 'Windows', svg: '<rect width="100" height="140" fill="#1f7fd8"/><rect x="6" y="6" width="88" height="128" fill="none" stroke="#8cc4f4" stroke-width="1.5"/><rect x="10" y="10" width="80" height="120" fill="#1a74cc"/><g clip-path="url(#c)"><circle cx="50" cy="70" r="26" fill="#0e2a5c"/><g stroke="#5f93c9" stroke-width="1.6" opacity=".8"><path d="M24 40 L24 100"/></g></g><defs><clipPath id="c"><circle cx="50" cy="70" r="26"/></clipPath></defs><g clip-path="url(#c)" stroke="#6aa0d6" stroke-width="1.4" opacity=".75" fill="none"><path d="M-10 40 L30 100 M110 40 L70 100"/><path d="M0 40 L40 100 M100 40 L60 100"/><path d="M10 40 L50 100 M90 40 L50 100"/><path d="M20 40 L60 100 M80 40 L40 100"/><path d="M30 40 L70 100 M70 40 L30 100"/><path d="M40 40 L80 100 M60 40 L20 100"/><path d="M50 40 L90 100 M50 40 L10 100"/><path d="M60 40 L100 100 M40 40 L0 100"/><path d="M70 40 L110 100 M30 40 L-10 100"/></g><g fill="#0a1d42"><path d="M30 60 Q36 48 50 52 Q44 62 34 70Z"/><path d="M64 56 Q72 62 70 74 Q60 70 58 60Z"/><path d="M42 82 Q52 76 62 84 Q58 92 46 90Z"/></g><circle cx="50" cy="70" r="26" fill="none" stroke="#7fb0e0" stroke-width="1.2" opacity=".7"/>' },
     { name: 'Клетка', svg: '<rect width="100" height="140" fill="#d9e0c8"/><g fill="#9db598" opacity=".75">' + Array.from({ length: 8 }, (_, i) => `<rect x="${i * 14 - 4}" y="0" width="7" height="140"/><rect x="0" y="${i * 20 - 4}" width="100" height="7"/>`).join('') + '</g><rect x="3" y="3" width="94" height="134" rx="3" fill="none" stroke="#f3f1e6" stroke-width="2"/>' },
     { name: 'Классика', css: 'repeating-linear-gradient(45deg,#2b4f9b 0 6px,#35609f 6px 12px)' },
     { name: 'Казино', svg: '<rect width="100" height="140" fill="#6d0f21"/><g stroke="#e8c35a" stroke-width="1" opacity=".55">' + Array.from({ length: 16 }, (_, i) => `<path d="M${i * 12 - 40} 0 L${i * 12 + 60} 140 M${i * 12 + 60} 0 L${i * 12 - 40} 140"/>`).join('') + '</g><rect x="5" y="5" width="90" height="130" rx="4" fill="none" stroke="#e8c35a" stroke-width="2"/><circle cx="50" cy="70" r="20" fill="#6d0f21" stroke="#e8c35a" stroke-width="2"/><text x="50" y="80" font-size="28" text-anchor="middle" fill="#e8c35a">♠</text>' },
@@ -845,10 +849,10 @@ const Durak = (() => {
     return s;
   }
   function faceSVG(c) {
-    const rank = RANKS[c.r], red = RED(c.s), col = red ? '#c62828' : '#1b1b1b';
+    const rank = RANKS[c.r], red = RED(c.s), col = red ? '#e00000' : '#000';
     if (rank === 'В' || rank === 'Д' || rank === 'К') {
       const f = courtFigure(rank, red, c.s);
-      return `<svg viewBox="0 0 60 100" preserveAspectRatio="xMidYMid meet"><rect x="1" y="1" width="58" height="98" rx="3" fill="#fff8e6" stroke="#c9a24a" stroke-width="1"/><g>${f}</g><g transform="rotate(180 30 50)">${f}</g><line x1="3" y1="50" x2="57" y2="50" stroke="#c9a24a" stroke-width=".6"/></svg>`;
+      return `<svg viewBox="0 0 60 100" preserveAspectRatio="xMidYMid meet"><rect x="1" y="1" width="58" height="98" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1"/><g>${f}</g><g transform="rotate(180 30 50)">${f}</g><line x1="3" y1="50" x2="57" y2="50" stroke="#c9a24a" stroke-width=".6"/></svg>`;
     }
     if (rank === 'Т') return `<svg viewBox="0 0 60 100"><text x="30" y="64" font-size="46" text-anchor="middle" fill="${col}">${c.s}</text></svg>`;
     const pips = PIPS[+rank].map(([x, y]) => `<text x="${x * 60}" y="${y * 100 + 6}" font-size="17" text-anchor="middle" fill="${col}"${y > .5 ? ` transform="rotate(180 ${x * 60} ${y * 100})"` : ''}>${c.s}</text>`).join('');
@@ -856,7 +860,7 @@ const Durak = (() => {
   }
   function cardEl(c, o = {}) {
     const el = document.createElement('div');
-    el.className = 'card' + (RED(c.s) ? ' red' : '') + (o.cls ? ' ' + o.cls : '');
+    el.className = 'card' + (RED(c.s) ? ' red' : '') + (o.cls ? ' ' + o.cls : ''); if (c.id != null) el.dataset.id = c.id;
     el.innerHTML = `<b>${RANKS[c.r]}<i>${c.s}</i></b><span class="face">${faceSVG(c)}</span><b class="br">${RANKS[c.r]}<i>${c.s}</i></b>`;
     if (o.onclick) el.onclick = o.onclick;
     return el;
@@ -894,9 +898,23 @@ const Durak = (() => {
   addEventListener('resize', () => { if (active) { fitCards(); if (S) fitTable(); } });
   if (window.ResizeObserver) new ResizeObserver(() => { if (active) { fitCards(); if (S) fitTable(); } }).observe(stage);
 
+  // полёт карты из прежнего места (rect) в текущее положение
+  function fly(el, from, dur, delay) {
+    if (!el.animate || FAST() || Core.reduce()) return;
+    const to = el.getBoundingClientRect(); if (!to.width) return;
+    const dx = from.left + from.width / 2 - (to.left + to.width / 2), dy = from.top + from.height / 2 - (to.top + to.height / 2), sc = from.width / to.width;
+    if (Math.abs(dx) < 2 && Math.abs(dy) < 2 && Math.abs(sc - 1) < .03) return;
+    const end = getComputedStyle(el).transform; const e = end && end !== 'none' ? end : '';
+    el.style.zIndex = 50;
+    const a = el.animate([{ transform: `translate(${dx}px,${dy}px) scale(${sc})`, opacity: .9 }, { transform: e || 'none', opacity: 1 }], { duration: dur || 420, delay: delay || 0, easing: 'cubic-bezier(.2,.75,.25,1)', fill: 'backwards' });
+    a.onfinish = a.oncancel = () => { el.style.zIndex = ''; };
+  }
   function render() {
     if (!S || !active) return;
     fitCards();
+    const prevR = new Map(); document.querySelectorAll('#dk-me .card, #dk-table .card').forEach(e => { if (e.dataset.id != null) prevR.set(e.dataset.id, e.getBoundingClientRect()); });
+    const prevT = new Set([...document.querySelectorAll('#dk-table .card')].map(e => e.dataset.id));
+    const oppR = $d('dk-opps').getBoundingClientRect(), deckR = $d('dk-deck').getBoundingClientRect(), wasDeal = dealAnim;
     const op = $d('dk-opps'); op.innerHTML = ''; op.className = 'dk-opps n' + (PL.length - 1);
     PL.filter(p => p !== 'me').forEach((p, bi) => {
       const box = document.createElement('div');
@@ -928,6 +946,7 @@ const Durak = (() => {
       tb.appendChild(w);
     });
     fitTable();
+    if (!wasDeal) tb.querySelectorAll('.card').forEach(e => { if (prevT.has(e.dataset.id)) return; const f = prevR.get(e.dataset.id) || { left: oppR.left + oppR.width / 2 - 20, top: oppR.top + oppR.height / 2 - 28, width: 40, height: 56 }; fly(e, f, 460); });
     if (sweepTo) { const to = sweepTo; sweepTo = null; if (!S.table.length && oldPairs.length) sweepAnim(oldPairs, to); }
     const mh = $d('dk-me'); mh.innerHTML = '';
     const sorted = [...S.hands.me].sort((a, b) => (isTrump(a) - isTrump(b)) || a.s.localeCompare(b.s) || a.r - b.r);
@@ -942,6 +961,7 @@ const Durak = (() => {
       if (fresh) el.style.setProperty('--dl', (dealAnim ? di++ * .06 : 0) + 's');
       mh.appendChild(el);
     });
+    if (!wasDeal) { let k = 0; mh.querySelectorAll('.card').forEach(e => { const p = prevR.get(e.dataset.id); if (p) fly(e, p, 320); else if (e.classList.contains('dealin')) { e.classList.remove('dealin'); fly(e, { left: deckR.left, top: deckR.top, width: deckR.width, height: deckR.height }, 480, (k++) * 90); } }); }
     shownMe = new Set(S.hands.me.map(c => c.id)); dealAnim = false;
     const canPass = myTurn && !busy && (S.phase === 'attack' || S.phase === 'throwin') && S.table.length;
     $d('dk-pass').textContent = S.phase === 'throwin' ? 'Готово' : 'Бито';
@@ -1591,12 +1611,44 @@ function makeSolitaire(MODE) {
     const pips = PIPS[n].map(([x, y]) => `<text x="${8 + x * 44}" y="${y * 38 + 14}" font-size="17" text-anchor="middle" fill="${col}"${y > .5 ? ` transform="rotate(180 ${8 + x * 44} ${y * 38 + 9})"` : ''}>${su}</text>`).join('');
     return `<svg viewBox="0 0 60 56">${pips}</svg>`;
   }
+  function courtFigure(kind, red, suit) {
+    const OUT = '#1b1b1b', SKIN = '#f4d5ab', GOLD = '#e6b43c', BLUE = '#2d5aa8';
+    const ROBE = red ? '#c62828' : '#2b2b2b', ACC = red ? BLUE : '#c62828', HAIR = kind === 'К' ? '#d9d9d9' : '#6b4423';
+    const sw = 'stroke="' + OUT + '" stroke-width=".9" stroke-linejoin="round"';
+    let s = '';
+    if (kind === 'К') s += `<line x1="50" y1="9" x2="50" y2="44" stroke="${GOLD}" stroke-width="2"/><circle cx="50" cy="8" r="3.3" fill="${GOLD}" ${sw}/>`;
+    if (kind === 'Д') s += `<path d="M18 19Q17 5 30 5Q43 5 42 19L45 40Q39 38 38.5 30Q38 13 30 13Q22 13 21.5 30Q21 38 15 40Z" fill="${HAIR}" ${sw}/>`;
+    s += `<path d="M5 48Q7 33 30 31Q53 33 55 48Z" fill="${ROBE}" ${sw}/>`;
+    s += `<path d="M14 48Q16 38 30 36Q44 38 46 48" fill="${ACC}" ${sw}/><path d="M10 44Q30 35 50 44" stroke="${GOLD}" stroke-width="2" fill="none"/>`;
+    s += `<rect x="26" y="27" width="8" height="7" fill="${SKIN}" ${sw}/>`;
+    if (kind === 'В') s += `<path d="M20.5 22Q20 12 30 12Q40 12 39.5 22L39.5 26Q36 18 30 18Q24 18 20.5 26Z" fill="${HAIR}" ${sw}/>`;
+    s += `<ellipse cx="30" cy="22" rx="8.5" ry="10" fill="${SKIN}" ${sw}/>`;
+    if (kind === 'К') s += `<path d="M21.5 23Q21 37 30 38.5Q39 37 38.5 23Q35 29 30 29Q25 29 21.5 23Z" fill="${HAIR}" ${sw}/><path d="M25 26Q30 24 35 26" stroke="${OUT}" stroke-width="1.2" fill="none"/>`;
+    s += `<ellipse cx="26.5" cy="20.5" rx="1.1" ry="1.4" fill="${OUT}"/><ellipse cx="33.5" cy="20.5" rx="1.1" ry="1.4" fill="${OUT}"/><path d="M30 21.5L29 25.5L31 25.5" stroke="${OUT}" stroke-width=".7" fill="none"/>`;
+    if (kind !== 'К') s += `<path d="M27.5 28Q30 29.8 32.5 28" stroke="#b03a3a" stroke-width="1" fill="none"/>`;
+    if (kind === 'К') s += `<path d="M19 12L20 1L25.5 7L30 -1L34.5 7L40 1L41 12Z" fill="${GOLD}" ${sw}/><circle cx="30" cy="9" r="1.6" fill="${ACC}"/>`;
+    if (kind === 'Д') s += `<path d="M22 11L23 3L27 7L30 1L33 7L37 3L38 11Z" fill="${GOLD}" ${sw}/><circle cx="30" cy="8.5" r="1.4" fill="${ACC}"/><g fill="${GOLD}" ${sw}><circle cx="25" cy="35.5" r="1.4"/><circle cx="30" cy="37" r="1.4"/><circle cx="35" cy="35.5" r="1.4"/></g>`;
+    if (kind === 'В') s += `<path d="M20 15Q22 4 32 5Q42 6 41 15Q30 10 20 15Z" fill="${ROBE}" ${sw}/><path d="M36 7Q47 -1 55 9Q46 6 39 11Z" fill="${GOLD}" ${sw}/><circle cx="31" cy="9" r="1.4" fill="${GOLD}"/>`;
+    s += `<text x="10" y="15" font-size="9" text-anchor="middle" fill="${red ? '#c62828' : '#1b1b1b'}">${suit}</text>`;
+    return s;
+  }
+  function courtFace(c) {
+    const kind = ['В', 'Д', 'К'][c.r - 10], f = courtFigure(kind, red(c), SU[c.s]);
+    return `<svg viewBox="0 0 60 100" preserveAspectRatio="xMidYMid meet"><rect x="1" y="1" width="58" height="98" rx="2" fill="#fff" stroke="#1a1a1a" stroke-width="1"/><g>${f}</g><g transform="rotate(180 30 50)">${f}</g></svg>`;
+  }
+  function winFace(c) {
+    const su = SU[c.s], col = red(c) ? '#d4262c' : '#111', n = c.r + 1;
+    if (n === 1) return `<svg viewBox="0 0 60 85"><text x="30" y="52" font-size="38" text-anchor="middle" fill="${col}">${su}</text></svg>`;
+    const pips = PIPS[n].map(([x, y]) => { const px = x === .5 ? 30 : (x < .5 ? 18 : 42), py = y * 85; return `<text x="${px}" y="${py + 7}" font-size="19" text-anchor="middle" fill="${col}"${y > .5 ? ` transform="rotate(180 ${px} ${py})"` : ''}>${su}</text>`; }).join('');
+    return `<svg viewBox="0 0 60 85">${pips}</svg>`;
+  }
+  const idx = (c, k = '') => `<span class="ix${k}" style="font-size:${Math.round(L.cw * .23)}px"><b>${RK[c.r]}</b><i>${SU[c.s]}</i></span>`;
   function cardEl(c, x, y, data) {
     const e = document.createElement('div');
     e.className = 'sc' + (c.up ? (red(c) ? ' r' : '') : ' back');
     e.style.cssText = `left:${x}px;top:${y}px;width:${L.cw}px;height:${L.ch}px;`;
     if (c.up) {
-      if (K) e.innerHTML = `<span class="t" style="font-size:${L.fs}px">${RK[c.r]}${SU[c.s]}</span><span class="pp">${bigFace(c)}</span><span class="t2" style="font-size:${L.fs}px">${RK[c.r]}${SU[c.s]}</span>`;
+      if (K) e.innerHTML = (c.r >= 10 ? `<span class="pp cf">${courtFace(c)}</span>` : `<span class="pf">${winFace(c)}</span>`) + idx(c) + idx(c, ' r2');
       else e.innerHTML = `<span class="t" style="font-size:${L.fs}px">${RK[c.r]}${SU[c.s]}</span><span class="c" style="font-size:${Math.round(L.cw * .55)}px">${SU[c.s]}</span>`;
     }
     Object.assign(e.dataset, data); return e;

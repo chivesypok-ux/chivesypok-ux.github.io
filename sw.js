@@ -1,6 +1,6 @@
 // Офлайн-кэш: приложение целиком кэшируется при первом открытии.
 // Чтобы выпустить новую версию, увеличьте число в VERSION.
-const VERSION = 'games-v1';
+const VERSION = 'games-v6';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => Promise.all(FILES.map(f => c.add(f).catch(() => {})))).then(() => self.skipWaiting()));
